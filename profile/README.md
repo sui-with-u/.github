@@ -1,15 +1,17 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sui-with-u/.github/main/profile/banner.jpg" width="500">
+  <img src="https://raw.githubusercontent.com/sui-with-u/.github/main/profile/banner.jpg" width="400">
 </p>
 
 <h3 align="center">“夜来南风起，小麦覆陇黄”</h3>
+<h5 align="center">“With the night came a southern breeze; the wheat now blankets the ridges in gold.”</h4>
 <h3 align="center">「穗」，象征着丰收与希望，麦穗黄、九穗嘉禾。</h3>
+<h5 align="center">「穗」the ear of grain—symbolizes harvest and hope: the golden hue of ripening wheat, and the auspicious nine-eared grain.</h4>
 
 <p align="center">
-  <a href="#-sui-生态">生态</a> ·
-  <a href="#-repositories">仓库</a> ·
-  <a href="#-architecture">架构</a> ·
-  <a href="#-license">许可证</a>
+  <a href="#-sui-生态">生态Ecology</a> ·
+  <a href="#-repositories">仓库Repositories</a> ·
+  <a href="#-architecture">架构Architecture</a> ·
+  <a href="#-license">许可证License</a>
 </p>
 
 <p align="center">
@@ -34,7 +36,7 @@
 | 层次 | 说明 |
 |------|------|
 | **核心（Core）** | 大脑。内置技能（LLM / TTS / OCR / STT）+ 情感 / 记忆 / 性格引擎 |
-| **触手（Hands）** | 独立仓库，每个连接一个外部平台，通过 WebSocket 与 Core 通信 |
+| **猫爪（Hands）** | 独立仓库，每个连接一个外部平台，通过 WebSocket 与 Core 通信 |
 
 > 一个 SuiCore + 超多猫爪 = SuiBot 生态
 
@@ -44,7 +46,7 @@
 
 | 仓库 | 说明 | 状态 |
 |------|------|------|
-| [SuiBot](https://github.com/sui-with-u/SuiBot) | 主仓库，生态总览与文档 | ✅ 就绪 |
+| [SuiBot](https://github.com/sui-with-u/SuiBot) | 主仓库，生态总览与文档 | 🚧 开发中 |
 | [SuiCore](https://github.com/sui-with-u/SuiCore) | 核心大脑，内置技能，WebSocket 服务端 | 🚧 开发中 |
 | [SuiWeb](https://github.com/sui-with-u/SuiWeb) | 管理面板，可视化与数据管理 | 🚧 开发中 |
 | [Sui2NapCatQQ](https://github.com/sui-with-u/Sui2NapCatQQ) | QQ 双向消息（NapCat 中间件） | 📌 待开发 |
@@ -146,7 +148,7 @@ It consists of two layers:
 
 | Repository | Description | Status |
 |------------|-------------|--------|
-| [SuiBot](https://github.com/sui-with-u/SuiBot) | Main repo, ecosystem overview & docs | ✅ Ready |
+| [SuiBot](https://github.com/sui-with-u/SuiBot) | Main repo, ecosystem overview & docs | 🚧 Building |
 | [SuiCore](https://github.com/sui-with-u/SuiCore) | Core brain, built-in Skills, WS server | 🚧 Building |
 | [SuiWeb](https://github.com/sui-with-u/SuiWeb) | Web dashboard, visualization & management | 🚧 Building |
 | [Sui2NapCatQQ](https://github.com/sui-with-u/Sui2NapCatQQ) | QQ bidirectional messaging (via NapCat) | 📌 Planned |
