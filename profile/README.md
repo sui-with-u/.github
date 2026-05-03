@@ -22,7 +22,7 @@
 
 <!-- Language Switcher -->
 
-<details open>
+<details>
 <summary><b>🇨🇳 中文</b></summary>
 
 <br>
