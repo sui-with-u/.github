@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sui-with-u/.github/main/profile/banner.svg" alt="Sui-With-u" width="600">
+  <img src="https://raw.githubusercontent.com/sui-with-u/.github/main/profile/banner.jpg" alt="Sui-With-u" width="600">
 </p>
 
 <h3 align="center">“夜来南风起，小麦覆陇黄”</h3>
@@ -13,8 +13,11 @@
   <a href="#-license">许可证</a>
 </p>
 
-![](https://img.shields.io/badge/status-building-7C3AED?style=flat-square)
-![](https://img.shields.io/badge/license-PolyForm%20Noncommercial-3B82F6?style=flat-square)
+<p align="center">
+  <img src="https://img.shields.io/badge/status-building-7C3AED?style=flat-square" alt="status">
+  <img src="https://img.shields.io/badge/license-PolyForm%20Noncommercial-3B82F6?style=flat-square" alt="license">
+  <img src="https://img.shields.io/badge/language-Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="python">
+</p>
 
 ---
 
@@ -29,7 +32,7 @@
 | **Core** | 大脑。内置 Skills（LLM / TTS / OCR / STT）+ 情感 / 记忆 / 性格引擎 |
 | **Hands** | 触手。独立仓库，每个连接一个外部平台，通过 WebSocket 与 Core 通信 |
 
-> 一个核心（SuiCore）+ 五只手 = SuiBot 生态
+> 一个核心（SuiCore）+ 超多猫爪 = SuiBot 生态
 
 ---
 
