@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sui-with-u/.github/main/profile/banner.jpg">
+  <img src="https://raw.githubusercontent.com/sui-with-u/.github/main/profile/banner.jpg" width="500">
 </p>
 
 <h3 align="center">“夜来南风起，小麦覆陇黄”</h3>
@@ -31,12 +31,12 @@
 
 它由两个层次构成：
 
-| 层 | 说明 |
-|----|------|
-| **Core** | 大脑。内置 Skills（LLM / TTS / OCR / STT）+ 情感 / 记忆 / 性格引擎 |
-| **Hands** | 触手。独立仓库，每个连接一个外部平台，通过 WebSocket 与 Core 通信 |
+| 层次 | 说明 |
+|------|------|
+| **核心（Core）** | 大脑。内置技能（LLM / TTS / OCR / STT）+ 情感 / 记忆 / 性格引擎 |
+| **触手（Hands）** | 独立仓库，每个连接一个外部平台，通过 WebSocket 与 Core 通信 |
 
-> 一个核心（SuiCore）+ 超多猫爪 = SuiBot 生态
+> 一个 SuiCore + 超多猫爪 = SuiBot 生态
 
 ---
 
@@ -44,22 +44,23 @@
 
 | 仓库 | 说明 | 状态 |
 |------|------|------|
-| [SuiCore](https://github.com/sui-with-u/SuiCore) | 核心大脑，内置 Skills，WS 服务端 | 🚧 开发中 |
-| [SuiWeb](https://github.com/sui-with-u/SuiWeb) | Web 管理面板，可视化 + 数据管理 | 🚧 开发中 |
+| [SuiBot](https://github.com/sui-with-u/SuiBot) | 主仓库，生态总览与文档 | ✅ 就绪 |
+| [SuiCore](https://github.com/sui-with-u/SuiCore) | 核心大脑，内置技能，WebSocket 服务端 | 🚧 开发中 |
+| [SuiWeb](https://github.com/sui-with-u/SuiWeb) | 管理面板，可视化与数据管理 | 🚧 开发中 |
 | [Sui2NapCatQQ](https://github.com/sui-with-u/Sui2NapCatQQ) | QQ 双向消息（NapCat 中间件） | 📌 待开发 |
 | [Sui2vtuber](https://github.com/sui-with-u/Sui2vtuber) | VTubeStudio 皮套控制 | 📌 待开发 |
 | [Sui2tg](https://github.com/sui-with-u/Sui2tg) | Telegram 机器人 | 📌 待开发 |
-| [Sui2minecraft](https://github.com/sui-with-u/Sui2minecraft) | Minecraft 聊天 / 指令 / 自动化 /游戏 | 📌 待开发 |
+| [Sui2minecraft](https://github.com/sui-with-u/Sui2minecraft) | Minecraft 聊天 / 指令 / 自动化 | 📌 待开发 |
 
 ---
 
-## 🏗 Architecture
+## 🏗 架构
 
 ```
                          ┌──────────────┐
                          │   SuiCore    │
                          │  ┌─────────┐ │
-               ┌─────────┤  │ Skills  │ │
+               ┌─────────┤  │ 技能    │ │
                │         │  │ ┌─────┐ │ │
                │         │  │ │ LLM │ │ │
                │         │  │ ├─────┤ │ │
@@ -71,13 +72,13 @@
                          │  │ └─────┘ │ │
           ┌──────────┐   │  └─────────┘ │
           │Sui2NapCat│   │  ┌─────────┐ │
-          │  (QQ)    │◄──┤  │ Engine  │ │
+          │  (QQ)    │◄──┤  │ 引擎    │ │
           └──────────┘   │  │ ┌──────┐│ │
-                         │  │ │Memory││ │
+                         │  │ │记忆  ││ │
           ┌──────────┐   │  │ ├──────┤│ │
-          │Sui2vtuber│   │  │ │Emotion││ │
+          │Sui2vtuber│   │  │ │情感  ││ │
           └──────────┘   │  │ ├──────┤│ │
-                         │  │ │Persona││ │
+                         │  │ │性格  ││ │
           ┌──────────┐   │  │ └──────┘│ │
           │ Sui2tg   │   │  └─────────┘ │
           └──────────┘   └──────────────┘
@@ -103,19 +104,19 @@
 ### 数据流
 
 ```
-外部平台 → Hand → WS → SuiCore（Skills 处理）→ WS → Hand → 外部平台
+外部平台 → Hand → WS → SuiCore（技能处理）→ WS → Hand → 外部平台
 ```
 
 ---
 
-## 📜 License
+## 📜 许可证
 
 Copyright (c) 2026 Sui-With-u
 
-All repositories in this organization are licensed under the **PolyForm Noncommercial License 1.0.0**.  
-You may use, modify, and distribute the software for **noncommercial purposes only**.
+本组织下所有仓库均使用 **PolyForm Noncommercial License 1.0.0** 许可。
+仅允许**非商业用途**。
 
-See the [LICENSE](https://github.com/sui-with-u/.github/blob/main/LICENSE) file for details.
+详见 [LICENSE](https://github.com/sui-with-u/.github/blob/main/LICENSE) 文件。
 
 ---
 
@@ -137,7 +138,7 @@ It consists of two layers:
 | **Core** | The brain. Built-in Skills (LLM / TTS / OCR / STT) + Emotion / Memory / Personality engines |
 | **Hands** | Independent repositories, each connecting to an external platform via WebSocket |
 
-> One Core (SuiCore) + many paws = SuiBot ecosystem
+> One SuiCore + many paws = SuiBot ecosystem
 
 ---
 
@@ -145,6 +146,7 @@ It consists of two layers:
 
 | Repository | Description | Status |
 |------------|-------------|--------|
+| [SuiBot](https://github.com/sui-with-u/SuiBot) | Main repo, ecosystem overview & docs | ✅ Ready |
 | [SuiCore](https://github.com/sui-with-u/SuiCore) | Core brain, built-in Skills, WS server | 🚧 Building |
 | [SuiWeb](https://github.com/sui-with-u/SuiWeb) | Web dashboard, visualization & management | 🚧 Building |
 | [Sui2NapCatQQ](https://github.com/sui-with-u/Sui2NapCatQQ) | QQ bidirectional messaging (via NapCat) | 📌 Planned |
