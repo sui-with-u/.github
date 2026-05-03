@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sui-with-u/.github/main/profile/banner.jpg" width="400">
+  <img src="https://raw.githubusercontent.com/sui-with-u/.github/main/profile/banner.jpg" width="366">
 </p>
 
 <h3 align="center">“夜来南风起，小麦覆陇黄”</h3>
