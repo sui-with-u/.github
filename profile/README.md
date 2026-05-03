@@ -1,13 +1,12 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sui-with-u/.github/main/profile/banner.jpg" alt="Sui-With-u" width="600">
+  <img src="https://raw.githubusercontent.com/sui-with-u/.github/main/profile/banner.jpg">
 </p>
 
 <h3 align="center">“夜来南风起，小麦覆陇黄”</h3>
-
 <h3 align="center">「穗」，象征着丰收与希望，麦穗黄、九穗嘉禾。</h3>
 
 <p align="center">
-  <a href="#-suit-生态">生态</a> ·
+  <a href="#-sui-生态">生态</a> ·
   <a href="#-repositories">仓库</a> ·
   <a href="#-architecture">架构</a> ·
   <a href="#-license">许可证</a>
@@ -19,7 +18,12 @@
   <img src="https://img.shields.io/badge/language-Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="python">
 </p>
 
----
+<!-- Language Switcher -->
+
+<details open>
+<summary><b>🇨🇳 中文</b></summary>
+
+<br>
 
 ## 🌾 Sui 生态
 
@@ -45,7 +49,7 @@
 | [Sui2NapCatQQ](https://github.com/sui-with-u/Sui2NapCatQQ) | QQ 双向消息（NapCat 中间件） | 📌 待开发 |
 | [Sui2vtuber](https://github.com/sui-with-u/Sui2vtuber) | VTubeStudio 皮套控制 | 📌 待开发 |
 | [Sui2tg](https://github.com/sui-with-u/Sui2tg) | Telegram 机器人 | 📌 待开发 |
-| [Sui2minecraft](https://github.com/sui-with-u/Sui2minecraft) | Minecraft 聊天 / 指令 / 自动化 | 📌 待开发 |
+| [Sui2minecraft](https://github.com/sui-with-u/Sui2minecraft) | Minecraft 聊天 / 指令 / 自动化 /游戏 | 📌 待开发 |
 
 ---
 
@@ -114,6 +118,111 @@ You may use, modify, and distribute the software for **noncommercial purposes on
 See the [LICENSE](https://github.com/sui-with-u/.github/blob/main/LICENSE) file for details.
 
 ---
+
+</details>
+
+<details>
+<summary><b>🇬🇧 English</b></summary>
+
+<br>
+
+## 🌾 Sui Ecosystem
+
+**SuiBot** is a modular AI character ecosystem. Its name comes from the Chinese character **「穗」** (suì), symbolizing harvest and hope.
+
+It consists of two layers:
+
+| Layer | Description |
+|-------|-------------|
+| **Core** | The brain. Built-in Skills (LLM / TTS / OCR / STT) + Emotion / Memory / Personality engines |
+| **Hands** | Independent repositories, each connecting to an external platform via WebSocket |
+
+> One Core (SuiCore) + many paws = SuiBot ecosystem
+
+---
+
+## 📦 Repositories
+
+| Repository | Description | Status |
+|------------|-------------|--------|
+| [SuiCore](https://github.com/sui-with-u/SuiCore) | Core brain, built-in Skills, WS server | 🚧 Building |
+| [SuiWeb](https://github.com/sui-with-u/SuiWeb) | Web dashboard, visualization & management | 🚧 Building |
+| [Sui2NapCatQQ](https://github.com/sui-with-u/Sui2NapCatQQ) | QQ bidirectional messaging (via NapCat) | 📌 Planned |
+| [Sui2vtuber](https://github.com/sui-with-u/Sui2vtuber) | VTubeStudio model control | 📌 Planned |
+| [Sui2tg](https://github.com/sui-with-u/Sui2tg) | Telegram bot | 📌 Planned |
+| [Sui2minecraft](https://github.com/sui-with-u/Sui2minecraft) | Minecraft chat / commands / automation | 📌 Planned |
+
+---
+
+## 🏗 Architecture
+
+```
+                         ┌──────────────┐
+                         │   SuiCore    │
+                         │  ┌─────────┐ │
+               ┌─────────┤  │ Skills  │ │
+               │         │  │ ┌─────┐ │ │
+               │         │  │ │ LLM │ │ │
+               │         │  │ ├─────┤ │ │
+               │         │  │ │ TTS │ │ │
+               │ WS      │  │ ├─────┤ │ │
+          ┌────┴─────┐   │  │ │ OCR │ │ │
+          │  SuiWeb  │   │  │ ├─────┤ │ │
+          └──────────┘   │  │ │ STT │ │ │
+                         │  │ └─────┘ │ │
+          ┌──────────┐   │  └─────────┘ │
+          │Sui2NapCat│   │  ┌─────────┐ │
+          │  (QQ)    │◄──┤  │ Engine  │ │
+          └──────────┘   │  │ ┌──────┐│ │
+                         │  │ │Memory││ │
+          ┌──────────┐   │  │ ├──────┤│ │
+          │Sui2vtuber│   │  │ │Emotion││ │
+          └──────────┘   │  │ ├──────┤│ │
+                         │  │ │Persona││ │
+          ┌──────────┐   │  │ └──────┘│ │
+          │ Sui2tg   │   │  └─────────┘ │
+          └──────────┘   └──────────────┘
+          ┌──────────┐
+          │Sui2mine  │
+          │ -craft   │
+          └──────────┘
+```
+
+### Communication Protocol
+
+All Hand ↔ Core communication uses **WebSocket** with JSON messages:
+
+```json
+{
+  "type": "input | output | status | command",
+  "from": "hand_name",
+  "to": "core | hand_name",
+  "payload": { ... }
+}
+```
+
+### Data Flow
+
+```
+External Platform → Hand → WS → SuiCore (Skills processing) → WS → Hand → External Platform
+```
+
+---
+
+## 📜 License
+
+Copyright (c) 2026 Sui-With-u
+
+All repositories in this organization are licensed under the **PolyForm Noncommercial License 1.0.0**.  
+You may use, modify, and distribute the software for **noncommercial purposes only**.
+
+See the [LICENSE](https://github.com/sui-with-u/.github/blob/main/LICENSE) file for details.
+
+---
+
+</details>
+
+<br>
 
 <p align="center">
   <sub>穗穗碎碎念 · Sui-With-u</sub>
