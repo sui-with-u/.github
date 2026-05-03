@@ -49,7 +49,7 @@
 | [SuiBot](https://github.com/sui-with-u/SuiBot) | 主仓库，生态总览与文档 | 🚧 开发中 |
 | [SuiCore](https://github.com/sui-with-u/SuiCore) | 核心大脑，内置技能，WebSocket 服务端 | 🚧 开发中 |
 | [SuiWeb](https://github.com/sui-with-u/SuiWeb) | 管理面板，可视化与数据管理 | 🚧 开发中 |
-| [Sui2NapCatQQ](https://github.com/sui-with-u/Sui2NapCatQQ) | QQ 双向消息（NapCat 中间件） | 📌 待开发 |
+| [Sui2OneBot](https://github.com/sui-with-u/Sui2OneBot) | QQ 双向消息（中间件） | 📌 待开发 |
 | [Sui2vtuber](https://github.com/sui-with-u/Sui2vtuber) | VTubeStudio 皮套控制 | 📌 待开发 |
 | [Sui2tg](https://github.com/sui-with-u/Sui2tg) | Telegram 机器人 | 📌 待开发 |
 | [Sui2minecraft](https://github.com/sui-with-u/Sui2minecraft) | Minecraft 聊天 / 指令 / 自动化 | 📌 待开发 |
@@ -151,7 +151,7 @@ It consists of two layers:
 | [SuiBot](https://github.com/sui-with-u/SuiBot) | Main repo, ecosystem overview & docs | 🚧 Building |
 | [SuiCore](https://github.com/sui-with-u/SuiCore) | Core brain, built-in Skills, WS server | 🚧 Building |
 | [SuiWeb](https://github.com/sui-with-u/SuiWeb) | Web dashboard, visualization & management | 🚧 Building |
-| [Sui2NapCatQQ](https://github.com/sui-with-u/Sui2NapCatQQ) | QQ bidirectional messaging (via NapCat) | 📌 Planned |
+| [Sui2OneBot](https://github.com/sui-with-u/Sui2OneBot) | QQ bidirectional messaging (via) | 📌 Planned |
 | [Sui2vtuber](https://github.com/sui-with-u/Sui2vtuber) | VTubeStudio model control | 📌 Planned |
 | [Sui2tg](https://github.com/sui-with-u/Sui2tg) | Telegram bot | 📌 Planned |
 | [Sui2minecraft](https://github.com/sui-with-u/Sui2minecraft) | Minecraft chat / commands / automation | 📌 Planned |
