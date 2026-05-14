@@ -8,11 +8,11 @@
 <h5 align="center">「穗」the ear of grain — symbolizes harvest and hope: the golden hue of ripening wheat, and the auspicious nine-eared grain.</h5>
 
 <p align="center">
-  <a href="#-sui-生态--sui-ecosystem">生态 Ecology</a> ·
-  <a href="#-仓库--repositories">仓库 Repositories</a> ·
-  <a href="#-架构--architecture">架构 Architecture</a> ·
-  <a href="#-引擎--engines">引擎 Engines</a> ·
-  <a href="#-license">许可证 License</a>
+  <a href="#-sui-生态--sui-ecosystem">生态</a> <a href="#-sui-ecosystem">Ecology</a> ·
+  <a href="#-仓库--repositories">仓库</a> <a href="#-repositories">Repositories</a> ·
+  <a href="#-架构--architecture">架构</a> <a href="#-architecture">Architecture</a> ·
+  <a href="#-引擎--engines">引擎</a> <a href="#-engines">Engines</a> ·
+  <a href="#-许可证--license">许可证</a> <a href="#-license-1">License</a>
 </p>
 
 <p align="center">
@@ -20,7 +20,6 @@
   <img src="https://img.shields.io/badge/license-PolyForm%20Noncommercial-3B82F6?style=flat-square" alt="license">
   <img src="https://img.shields.io/badge/language-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="typescript">
   <img src="https://img.shields.io/badge/runtime-Bun-F9F1E1?style=flat-square&logo=bun&logoColor=black" alt="bun">
-  <img src="https://img.shields.io/badge/frontend-React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="react">
 </p>
 
 ---
@@ -195,7 +194,7 @@ SuiSui 的「有温度」来自四个引擎，由 Core 直接调用：
 }
 ```
 
-完整规范见 [PROTOCOL.md](https://github.com/sui-with-u/suibot/blob/main/PROTOCOL.md)。
+完整规范见 [FRAMEWORK.md](https://github.com/sui-with-u/SuiStd/blob/main/SuiBot_FRAMEWORK.md)。
 
 ---
 
@@ -212,7 +211,7 @@ SuiSui 的「有温度」来自四个引擎，由 Core 直接调用：
 
 ---
 
-## 📜 License
+## 📜 许可证 · License
 
 Copyright (c) 2026 Sui-With-u
 
@@ -394,7 +393,7 @@ All Hand ↔ Core communication uses **WebSocket + JSON**:
 }
 ```
 
-Full specification: [PROTOCOL.md](https://github.com/sui-with-u/suibot/blob/main/PROTOCOL.md)
+Full specification: [FRAMEWORK.md](https://github.com/sui-with-u/SuiStd/blob/main/SuiBot_FRAMEWORK.md)
 
 ---
 
