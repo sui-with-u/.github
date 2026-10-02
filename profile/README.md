@@ -72,6 +72,7 @@ H-SuiWeb · H-OneBot · H-Telegram · H-Minecraft · T-TTS · T-Weather …
 | 仓库 | 说明 | 状态 |
 |------|------|------|
 | [H-SuiWeb](https://github.com/sui-with-u/H-SuiWeb) | 管理面板，情感曲线可视化、记忆查询、参数配置 | 🚧 开发中 |
+| [H-SuiArena](https://github.com/sui-with-u/H-SuiArena) | 赛博图灵博弈平台：真人与 SuiBot 驱动的 AI 同场匿名聊天、投票找出 AI | 🚧 未完工 |
 | [H-SuiDevWeb](https://github.com/sui-with-u/H-SuiDevWeb) | 开发调试面板 | 🚧 开发中 |
 | [H-OneBot](https://github.com/sui-with-u/H-OneBot) | QQ 双向消息（NapCat） | 📌 待开发 |
 | [H-Telegram](https://github.com/sui-with-u/H-Telegram) | Telegram 机器人 | 📌 待开发 |
@@ -136,10 +137,10 @@ cd suibot && bun install && bun run start
 # CLI / WebUI → Core → Hand Manager / Tool Manager → 操作
 # Manager 可自行处理简单的本层事务（心跳、断线重连、超时重试），无需经过 Core
 
-bun run sui add H-SuiWeb        # 拉取并安装（Manager 在 sui-with-u 下搜索同名仓库）
-bun run sui start H-SuiWeb      # 启动
-bun run sui stop H-SuiWeb       # 停止
-bun run sui add T-TTS           # Tool 同理
+bun run sui hand-install H-SuiWeb    # 拉取并安装（Manager 在 sui-with-u 下搜索同名仓库）
+bun run sui hand-start H-SuiWeb      # 启动
+bun run sui hand-stop H-SuiWeb       # 停止
+bun run sui tool-install T-TTS       # Tool 同理（tool-install / tool-list / tool-uninstall）
 ```
 
 ---
@@ -271,6 +272,7 @@ H-SuiWeb · H-OneBot · H-Telegram · H-Minecraft · T-TTS · T-Weather …
 | Repository | Description | Status |
 |------------|-------------|--------|
 | [H-SuiWeb](https://github.com/sui-with-u/H-SuiWeb) | Management dashboard: emotion visualization, memory search, config | 🚧 Building |
+| [H-SuiArena](https://github.com/sui-with-u/H-SuiArena) | Cyber-Turing Arena: humans and SuiBot-driven AIs chat anonymously; vote to find the AI | 🚧 Unfinished |
 | [H-SuiDevWeb](https://github.com/sui-with-u/H-SuiDevWeb) | Developer debug panel | 🚧 Building |
 | [H-OneBot](https://github.com/sui-with-u/H-OneBot) | QQ bidirectional messaging (NapCat) | 📌 Planned |
 | [H-Telegram](https://github.com/sui-with-u/H-Telegram) | Telegram bot | 📌 Planned |
@@ -335,10 +337,10 @@ cd suibot && bun install && bun run start
 # CLI / WebUI → Core → Hand Manager / Tool Manager → action
 # Managers may handle simple local tasks (heartbeat, reconnect, timeout retry) without Core
 
-bun run sui add H-SuiWeb        # pull & install (Manager searches sui-with-u org)
-bun run sui start H-SuiWeb      # start
-bun run sui stop H-SuiWeb       # stop
-bun run sui add T-TTS           # same for Tools
+bun run sui hand-install H-SuiWeb    # pull & install (Manager searches the sui-with-u org)
+bun run sui hand-start H-SuiWeb      # start
+bun run sui hand-stop H-SuiWeb       # stop
+bun run sui tool-install T-TTS       # same for Tools (tool-install / tool-list / tool-uninstall)
 ```
 
 ---
